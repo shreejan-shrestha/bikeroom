@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Explore" icon-name="standard:search">
+        <div class="slds-var-p-around_x-small wrapper">
+            <c-bike-card record={selectedBike}></c-bike-card>
+            <template if:true={bikes}>
+                <div class="content">
+                    <template for:each={bikes} for:item='bike'>
+                        <c-bike-tile key={bike.Id} testid ={bike.Id} bike={bike} onselected={handleBikeSelected} onclick={handleBikeClicked}></c-bike-tile>
+                       
+                    </template>
+                </div>
+            </template>
+            <!-- <c-bike-card record-id={bikeId}></c-bike-card> -->
+
+        </div>
+    </lightning-card>
+</template>

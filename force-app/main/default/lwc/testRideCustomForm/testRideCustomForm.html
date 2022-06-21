@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Request for a Test Drive">
+        <lightning-file-upload
+            label="Proof of Identification"
+            name="fileUploader"
+            accept={acceptedFormats}
+            record-id={recordId}
+            onuploadfinished={handleUploadFinished}
+            multiple
+        >
+        </lightning-file-upload>
+
+        <lightning-record-form class="recordFormClass"
+            title="Request for a Test Drive"
+            record-id={recordId}
+            object-api-name={testRider}
+            fields={myFields}
+            columns="2"
+            onsuccess={handleRequestCreated}
+            >
+        
+        </lightning-record-form>
+
+    </lightning-card>
+</template>

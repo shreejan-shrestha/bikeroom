@@ -1,0 +1,18 @@
+c-bike-tile{
+    min-width: 350px;
+    flex: 1;
+    margin: 10px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+
+.wrapper{
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+}

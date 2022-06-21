@@ -1,0 +1,21 @@
+<template>
+    <div onclick={handleClick}>
+        <div class="content">
+        
+            <img src={bike.Picture_URL__c} class="slds-align_absolute-center bikeImage" alt="Bike Picture" />
+        
+            <!-- <img src = {bikeimg} class="slds-align_absolute-center bike" alt="Bike Picture"/> -->
+            
+        </div>
+    </div>
+    <div>
+        <a class="slds-align_absolute-center" href= {imageUrl}>
+            {bike.Name}
+            <!-- <p class="slds-align_absolute-center">{bike.Name}</p> -->
+        </a>
+        <p class="slds-align_absolute-center">
+            MSRP: 
+            <lightning-formatted-number format-style="currency" currency-code="USD" value={bike.MSRP__c} class="price" maximum-fraction-digits="0"></lightning-formatted-number>
+        </p>
+    </div>
+</template>

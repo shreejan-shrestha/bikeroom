@@ -1,0 +1,12 @@
+img.bikeImage{
+    height: 200px;
+    width: 300px;
+    pointer-events: none;
+    border-radius: 10px;
+    /* margin: 20px 0px; */
+}
+
+.title{
+    font-weight: bold;
+    text-transform: uppercase;
+}
